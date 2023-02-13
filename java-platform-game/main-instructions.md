@@ -32,3 +32,31 @@
 ## Second part - inputs
 
 - add inputs and make sure they respond to events on keyboard/mouse
+- move rectangle drawn from first part with new inputs
+- mouse inputs
+  - mouseListener()
+    - clicked
+    - pressed
+    - released
+    - entered & exit
+  - mouseMotionListener()
+    - moved
+    - dragged
+- repaint() - to call paintComponent again with new values
+
+### Process
+
+- create new package for inputs
+  - add mouse input class
+  - add keyboard input class
+- implement event listeners in each class
+  - KeyboardListener(import java.awt.event.KeyEvent;
+    import java.awt.event.KeyListener; )
+  - MouseListener(import java.awt.event.MouseEvent; import java.awt.event.MouseListener;)
+  - MouseMotionListener(import java.awt.event.MouseMotionListener;)
+- add unimplemented classes (automatic fix)
+- add variables movement on x and y axis
+- implement movement through methods in gamePanel
+- add methods to input activity
+
+## Third part - game loop

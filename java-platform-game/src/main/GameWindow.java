@@ -23,6 +23,9 @@ public class GameWindow {
         // call gamePanel
         jframe.add(gamePanel); // once added call the window inside the panel
 
+        // set frame to open in the centre of the screen
+        jframe.setLocationRelativeTo(null);
+
           // set the visibility of the frame (false by default)
         jframe.setVisible(true);
 
