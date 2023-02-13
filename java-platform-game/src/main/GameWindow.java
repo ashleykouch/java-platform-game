@@ -1,0 +1,30 @@
+package main;
+
+import javax.swing.JFrame;
+
+public class GameWindow {
+    /* JFrame
+     * - the backbone of the game window
+     * - the "frame" of a painting
+     * - part of a larger collection of GUI componenets including JPanel, JTextField, JScrollPane, JLabel, etc
+     */
+    private JFrame jframe;
+     public GameWindow(GamePanel gamePanel) {
+
+        // create JFrame object
+        jframe = new JFrame();
+
+        // set frame size
+        jframe.setSize(400,400);
+
+        // set terminate java run with close button
+        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // call gamePanel
+        jframe.add(gamePanel); // once added call the window inside the panel
+
+          // set the visibility of the frame (false by default)
+        jframe.setVisible(true);
+
+     }
+}
