@@ -81,3 +81,8 @@
 - implement runnable into the game class
 - create thread in which the code will be run
   - the run method is where we will have the game loop
+
+## Fifth part - game loop
+
+- images
+- animations

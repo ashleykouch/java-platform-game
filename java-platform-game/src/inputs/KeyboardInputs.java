@@ -5,6 +5,9 @@ import java.awt.event.KeyListener;
 
 import main.GamePanel;
 
+import static utils.Constants.Directions.*;
+
+
 // implement the interface from the game panel - best for implementing methods
 public class KeyboardInputs implements KeyListener{
 
@@ -21,26 +24,34 @@ public class KeyboardInputs implements KeyListener{
 
             @Override
             public void keyPressed(KeyEvent e) {
-                // TODO Auto-generated method stub
+                 // determine which key will be pressed
+                switch(e.getKeyCode()) {
+                    case KeyEvent.VK_W:
+                    gamePanel.setDirection(UP);
+                    break;
+                    case KeyEvent.VK_A:
+                    gamePanel.setDirection(LEFT);
+                    break;
+                    case KeyEvent.VK_S:
+                    gamePanel.setDirection(DOWN);
+                    break;
+                    case KeyEvent.VK_D:
+                    gamePanel.setDirection(RIGHT);
+                    break;
+                }
                 
             }
 
             @Override
             public void keyReleased(KeyEvent e) {
                 
-                // determine which key will be pressed
+                // determine which key will be released
                 switch(e.getKeyCode()) {
                     case KeyEvent.VK_W:
-                    gamePanel.changeYDelta(-5);
-                    break;
                     case KeyEvent.VK_A:
-                    gamePanel.changeXDelta(-5);
-                    break;
                     case KeyEvent.VK_S:
-                    gamePanel.changeYDelta(+5);
-                    break;
                     case KeyEvent.VK_D:
-                   gamePanel.changeXDelta(+5);
+                    gamePanel.setMoving(false);
                     break;
                 }
                 

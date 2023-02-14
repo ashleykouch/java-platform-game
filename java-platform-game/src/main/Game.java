@@ -6,7 +6,7 @@ public class Game implements Runnable {
     private GameWindow gameWindow;
     private GamePanel gamePanel;
     private Thread gameThread;
-    private final int FPS_SET = 120;
+    private final int FPS_SET = 220;
 
 
     // call methods with a constructor which is considered the head method of the class - we can call any code within the constructor - NOTE: constructor name needs to match the class name

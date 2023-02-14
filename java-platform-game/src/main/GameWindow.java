@@ -14,8 +14,6 @@ public class GameWindow {
         // create JFrame object
         jframe = new JFrame();
 
-        // set frame size
-        jframe.setSize(400,400);
 
         // set terminate java run with close button
         jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -25,6 +23,10 @@ public class GameWindow {
 
         // set frame to open in the centre of the screen
         jframe.setLocationRelativeTo(null);
+
+        // call new panel size method
+        jframe.setResizable(false);
+        jframe.pack();
 
           // set the visibility of the frame (false by default)
         jframe.setVisible(true);
