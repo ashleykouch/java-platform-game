@@ -60,3 +60,24 @@
 - add methods to input activity
 
 ## Third part - game loop
+
+- repaint game loop
+- make a fps counter
+- remove bad game loop
+- make a good game loop
+- add visuals
+- game loop components
+  - thread - everything happens including input, updates, render, etc
+    - similar to processes in OS
+    - one program can have more than one process
+    - one process can have more than one thread
+  - runnable
+    - a method that is passed into a thread
+    - the code we want to run in a seperate thread
+    - thread.start()
+
+### Process
+
+- implement runnable into the game class
+- create thread in which the code will be run
+  - the run method is where we will have the game loop
